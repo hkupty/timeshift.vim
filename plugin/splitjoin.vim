@@ -47,5 +47,13 @@ function! Splitjoin_inner_markdown(type) abort
   call Splitjoin_split(a:type, 1)
 endfunction
 
-autocmd FileType markdown nmap <buffer> gx :set opfunc=Splitjoin_inner_markdown<CR>g@i`
-nmap <silent> gx :set opfunc=Splitjoin_split<CR>g@
+if !exists('g:splitjoin_markdown_mapping')
+  let g:splitjoin_markdown_mapping='cmd'
+endif
+
+if !exists('g:splitjoin_mapping')
+  let g:splitjoin_mapping='csj'
+endif
+
+autocmd FileType markdown exec 'nmap <buffer> '.g:splitjoin_markdown_mapping.' :set opfunc=Splitjoin_inner_markdown<CR>g@i`'
+execute "nmap ".g:splitjoin_mapping." :set opfunc=Splitjoin_split<CR>g@"
