@@ -6,5 +6,5 @@ This simple plugin splits current paragraph into another buffer and then joins b
 TODO
 ----
 
-- [ ] Allow more motions than paragraph
+- [x] Allow more motions than paragraph
 - [ ] Allow different buffer types (i.e. code inside markdown)
