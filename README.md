@@ -1,5 +1,5 @@
-Split Join
-==========
+Timeshift
+=========
 
 This simple plugin splits into another buffer and then joins back into
 original place.
@@ -16,12 +16,12 @@ block content with the correct filetype set.
 
 Please note that this plugin makes heavy use of marks, specially the mark `'s`.
 If you use marks frequenty, avoid marking `'s` on the same file that you are
-running splitjoin.
+running timeshift.
 
 
 Customization
 -------------
 
-In case `csj` gets too difficult, one can `let g:splitjoin_mapping` to anything better for you.
-The same applies to markdown, with `let g:splitjoin_markdown_mapping`.
+In case `csj` gets too difficult, one can `let g:timeshift_mapping` to anything better for you.
+The same applies to markdown, with `let g:timeshift_markdown_mapping`.
 
