@@ -28,7 +28,7 @@ The same applies to markdown, with `let g:timeshift_markdown_mapping`.
 Name
 ----
 
-To avoid collisions with [another plugin already named](https://github.com/AndrewRadev/splitjoin.vim),
+To avoid collisions with [another plugin already named splitjoin](https://github.com/AndrewRadev/splitjoin.vim),
 this plugin is now named timeshift.
 
 
