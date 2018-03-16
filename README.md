@@ -4,19 +4,16 @@ Timeshift
 This simple plugin splits into another buffer and then joins back into
 original place.
 
-To split something, simply do `csj{motion}` and the piece of text relative
-to the supplied motion is splitted into another buffer.
+To split something, do `csj{motion}`, which will cause the selected snippet to open in a separate buffer.
 
-After you are done editing in this separate buffer, simply do `q` and the
-text is joined back into where it was before.
+After you finished editing it, press `q` to return it.
 
-If you are inside a markdown buffer, you can `cmd` (change markdown) inside a code block (triple
+When inside a markdown buffer, you can `cmd` (change markdown) inside a code block (triple
 backticks) that it will automatically open a scratchpad buffer with the code
 block content with the correct filetype set.
 
 Please note that this plugin makes heavy use of marks, specially the mark `'s`.
-If you use marks frequenty, avoid marking `'s` on the same file that you are
-running timeshift.
+If you use marks frequenty, avoid marking `'s` when using timeshift.
 
 
 Customization
@@ -24,11 +21,3 @@ Customization
 
 In case `csj` gets too difficult, one can `let g:timeshift_mapping` to anything better for you.
 The same applies to markdown, with `let g:timeshift_markdown_mapping`.
-
-Name
-----
-
-To avoid collisions with [another plugin already named splitjoin](https://github.com/AndrewRadev/splitjoin.vim),
-this plugin is now named timeshift.
-
-
