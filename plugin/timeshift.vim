@@ -16,8 +16,8 @@ function! Splitjoin_split(type, ...) abort
   if a:0
     let cft = @s
     let cmdtype = 'line'
-  elseif has_key(ts_child, &ft)
-    let cft = ts_child[&ft]
+  elseif has_key(g:ts_child, &ft)
+    let cft = g:ts_child[&ft]
     let cmdtype = a:type
   else
     let cft = &ft
